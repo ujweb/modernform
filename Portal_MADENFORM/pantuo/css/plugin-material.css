@@ -1,0 +1,1036 @@
+@charset "utf-8";
+
+/* ==========
+
+Material-Style Elements
+
+Version:  0.1 Beta,
+Author:   Jia Wang,
+Demo:     http://ex.grnet.com.tw/wangtest/RWD/form.php,
+Created:  2016-06-24,
+Update:   2016-06-24
+
+========== */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700,900);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+.material-icons {
+  line-height: inherit;
+  vertical-align: middle;
+}
+
+.material {
+  font-family: 'Roboto', 'Microsoft JhengHei UI', 'Microsoft JhengHei', Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121;
+}
+.material * {
+  font-size: inherit;
+}
+.material h1,
+.material h2,
+.material h3,
+.material h4,
+.material h5,
+.material h6 {
+  margin: 10px 0;
+}
+.material h1 { font-size: 2em; }
+.material h2 { font-size: 1.75em; }
+.material h3 { font-size: 1.5em; }
+.material h4 { font-size: 1.25em; }
+.material h5 { font-size: 1em; }
+.material h6 { font-size: 0.875em; color: #999; }
+.material p { margin: 10px 0; }
+
+/* Buttons */
+.material .button {
+  display: inline-block;
+  position: relative;
+  line-height: 18px;
+  font-size: 0.8125em;
+  color: #212121;
+  border: none;
+  border-radius: 3px;
+  background-color: #eee;
+  box-shadow: 0 2px 2px rgba(0,0,0,.15), 0 3px 1px -2px rgba(0, 0, 0, 0.18), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  outline: none;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  transition: box-shadow .25s cubic-bezier(0.4,0,1,1), background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+  -ms-transition: box-shadow .25s cubic-bezier(0.4,0,1,1), background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+  -moz-transition: box-shadow .25s cubic-bezier(0.4,0,1,1), background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: box-shadow .25s cubic-bezier(0.4,0,1,1), background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+}
+.material .button.primary {
+  color: #fff;
+  background-color: #673ab7;
+}
+.material .button.info {
+  color: #fff;
+  background-color: #00bcd4;
+}
+.material .button.success {
+  color: #fff;
+  background-color: #4caf50;
+}
+.material .button.warning {
+  color: #fff;
+  background-color: #ff9800;
+}
+.material .button.danger {
+  color: #fff;
+  background-color: #f44336;
+}
+.material .button.xs { font-size: 0.75em; padding: 2px 8px; }
+.material .button.sm { padding: 6px 15px; }
+.material .button.lg { font-size: 0.9375em; padding: 15px 30px; }
+.material .button.round { border-radius: 9999px; }
+.material .button.icononly {
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  padding: 0;
+  text-align: center;
+}
+.material .button.icononly.xs {
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+}
+.material .button.icononly.sm {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.material .button.icononly.lg {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+}
+.material .button:hover {
+  box-shadow: 0 0 6px rgba(0,0,0,0.18), 0 6px 12px rgba(0,0,0,0.36);
+}
+.material .button .button--effect--wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.material .button .button--effect {
+  position: absolute;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,.05);
+  transform-origin: center center;
+  -ms-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+}
+.material .button.primary .button--effect,
+.material .button.info .button--effect,
+.material .button.success .button--effect,
+.material .button.warning .button--effect,
+.material .button.danger .button--effect {
+  background-color: rgba(255,255,255,.2);
+}
+.material .button .button--text { position: relative; }
+.material .button.xs .button--text > i.material-icons { margin-right: 4px; }
+.material .button.sm .button--text > i.material-icons { margin-right: 6px; }
+.material .button .button--text > i.material-icons { margin-right: 8px; }
+.material .button.lg .button--text > i.material-icons { margin-right: 10px; }
+.material .button.icononly .button--text > i.material-icons { margin-right: 0; }
+
+/* Links */
+.material .link {
+  display: inline-block;
+  position: relative;
+  line-height: 18px;
+  font-size: 0.8125em;
+  color: #212121;
+  border: none;
+  border-radius: 3px;
+  background: transparent;
+  outline: none;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  transition: background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+  -ms-transition: background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+  -moz-transition: background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+}
+.material .link.primary { color: #673ab7; }
+.material .link.info { color: #00bcd4; }
+.material .link.success { color: #4caf50; }
+.material .link.warning { color: #ff9800; }
+.material .link.danger { color: #f44336; }
+.material .link .link--effect--wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.material .link .link--effect {
+  position: absolute;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,.1);
+  transform-origin: center center;
+  -ms-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+}
+.material .link.primary .link--effect { background-color: rgba(103,58,183,.1); }
+.material .link.info .link--effect { background-color: rgba(0,188,212,.1); }
+.material .link.success .link--effect { background-color: rgba(76,175,80,.1); }
+.material .link.warning .link--effect { background-color: rgba(255,152,0,.1); }
+.material .link.danger .link--effect { background-color: rgba(244,67,54,.1); }
+.material .link .link--text { position: relative; }
+
+/* Fields */
+.material .field-group {
+  position: relative;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  transition: padding-left .25s cubic-bezier(0.4,0,0.2,1);
+  -ms-transition: padding-left .25s cubic-bezier(0.4,0,0.2,1);
+  -moz-transition: padding-left .25s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: padding-left .25s cubic-bezier(0.4,0,0.2,1);
+}
+.material .field-group.label-float.label-left.is-focus,
+.material .field-group.label-float.label-left:not(.is-empty),
+.material .field-group.label-fixed.label-left {
+  padding-left: 140px;
+}
+.material .field-group.label-icon { padding-left: 30px; }
+.material .field-group .field--icon {
+  display: block;
+  position: absolute;
+  font-size: 1.5em;
+  top: -4px;
+  right: 4px;
+}
+.material .field-group.success .field--icon { color: #4caf50; }
+.material .field-group.danger .field--icon { color: #f44336; }
+.material .field-group label.field-label,
+.material .field-group i.field-label--icon {
+  display: block;
+  position: absolute;
+  line-height: 20px;
+  font-size: 0;
+  font-weight: 400;
+  color: #999;
+  top: 4px;
+  left: 4px;
+  transition: top .25s cubic-bezier(0.4,0,0.2,1), left .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,1,1);
+  -ms-transition: top .25s cubic-bezier(0.4,0,0.2,1), left .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,1,1);
+  -moz-transition: top .25s cubic-bezier(0.4,0,0.2,1), left .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,1,1);
+  -webkit-transition: top .25s cubic-bezier(0.4,0,0.2,1), left .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,1,1);
+}
+.material .field-group.label-float label.field-label {
+  transition: top .25s cubic-bezier(0.4,0,0.2,1), left .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,1,1), font-size .25s cubic-bezier(0.4,0,1,1);
+  -ms-transition: top .25s cubic-bezier(0.4,0,0.2,1), left .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,1,1), font-size .25s cubic-bezier(0.4,0,1,1);
+  -moz-transition: top .25s cubic-bezier(0.4,0,0.2,1), left .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,1,1), font-size .25s cubic-bezier(0.4,0,1,1);
+  -webkit-transition: top .25s cubic-bezier(0.4,0,0.2,1), left .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,1,1), font-size .25s cubic-bezier(0.4,0,1,1);
+}
+.material .field-group.is-empty label.field-label {
+  font-size: 0.875em;
+}
+.material .field-group.label-float.label-top.is-focus label.field-label,
+.material .field-group.label-float.label-top:not(.is-empty) label.field-label,
+.material .field-group.label-fixed.label-top label.field-label {
+  top: -20px;
+  font-size: 0.8125em;
+  color: #673ab7;
+}
+.material .field-group.label-float.label-left.is-focus label.field-label,
+.material .field-group.label-float.label-left:not(.is-empty) label.field-label,
+.material .field-group.label-fixed.label-left label.field-label {
+  left: 0;
+  font-size: 0.8125em;
+  color: #673ab7;
+}
+.material .field-group.label-icon i.field-label--icon {
+  top: 3px;
+  left: 0;
+  font-size: 1em;
+  color: #212121;
+}
+.material .field-group.label-float.label-top.is-focus.success label.field-label,
+.material .field-group.label-float.label-top.success:not(.is-empty) label.field-label,
+.material .field-group.label-fixed.label-top.success label.field-label,
+.material .field-group.label-float.label-left.is-focus.success label.field-label,
+.material .field-group.label-float.label-left.success:not(.is-empty) label.field-label,
+.material .field-group.label-fixed.label-left.success label.field-label {
+  color: #4caf50;
+}
+.material .field-group.label-float.label-top.is-focus.danger label.field-label,
+.material .field-group.label-float.label-top.danger:not(.is-empty) label.field-label,
+.material .field-group.label-fixed.label-top.danger label.field-label,
+.material .field-group.label-float.label-left.is-focus.danger label.field-label,
+.material .field-group.label-float.label-left.danger:not(.is-empty) label.field-label,
+.material .field-group.label-fixed.label-left.danger label.field-label {
+  color: #f44336;
+}
+.material .field-group .field-border {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #673ab7;
+  left: 0;
+  bottom: 10px;
+  transform-origin: center center;
+  -ms-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transition: all .25s cubic-bezier(0.4,0,0.2,1);
+  -ms-transition: all .25s cubic-bezier(0.4,0,0.2,1);
+  -moz-transition: all .25s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: all .25s cubic-bezier(0.4,0,0.2,1);
+}
+.material .field-group.success .field-border { background-color: #4caf50; }
+.material .field-group.danger .field-border { background-color: #f44336; }
+.material .field-group.label-float.label-left .field-border {
+  transform-origin: right center;
+  -ms-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -webkit-transform-origin: right center;
+}
+.material .field-group.label-fixed .field-border {
+  transform-origin: left center;
+  -ms-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -webkit-transform-origin: left center;
+}
+.material .field-group.label-float.label-left.is-focus .field-border,
+.material .field-group.label-float.label-left:not(.is-empty) .field-border,
+.material .field-group.label-fixed.label-left .field-border {
+  width: calc(100% - 140px);
+  left: 140px;
+}
+.material .field-group.label-icon .field-border {
+  width: calc(100% - 30px);
+  left: 30px;
+  transform-origin: left center;
+  -ms-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -webkit-transform-origin: left center;
+}
+.material .field-group.is-focus .field-border {
+  transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+}
+.material .field-group input.field-style {
+  display: block;
+  position: relative;
+  width: 100%;
+  line-height: 20px;
+  font-size: 0.875em;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background: transparent;
+  outline: none;
+  padding: 4px;
+  margin-bottom: 5px;
+}
+.material .field-group.success input.field-style,
+.material .field-group.danger input.field-style {
+  padding-right: 30px;
+}
+.material .field-group input.field-style:-ms-input-placeholder {color: #999; }
+.material .field-group input.field-style:-moz-placeholder { color: #999; }
+.material .field-group input.field-style::-moz-placeholder { color: #999; }
+.material .field-group input.field-style::-webkit-input-placeholder { color: #999; }
+
+/* Dropdowns: Select */
+.material .field-group .field--dropdown {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+.material .field-group select.field-style {
+  display: block;
+  position: relative;
+  width: 100%;
+  line-height: 20px;
+  font-size: 0.875em;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 20px 4px 2px;
+  margin-bottom: 5px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.material .field-group select.field-style::-ms-expand {
+  display: none;
+}
+
+/* Textarea */
+.material .field-group .field--text--wrap {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 10px);
+  background: #f7f7f7;
+  border-radius: 3px;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  transition: width .25s cubic-bezier(0.4,0,0.2,1);
+  -ms-transition: width .25s cubic-bezier(0.4,0,0.2,1);
+  -moz-transition: width .25s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: width .25s cubic-bezier(0.4,0,0.2,1);
+}
+.material .field-group .field--text--wrap .field--text--effect {
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,.025);
+  top: -50%;
+  left: -100%;
+  transform-origin: center center;
+  -ms-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  transition: all .25s cubic-bezier(0.4,0,0.2,1);
+  -ms-transition: all .25s cubic-bezier(0.4,0,0.2,1);
+  -moz-transition: all .25s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: all .25s cubic-bezier(0.4,0,0.2,1);
+}
+.material .field-group.label-float.label-left .field--text--wrap .field--text--effect {
+  top: -100%;
+  left: -50%;
+  transform: scale(0,0.25);
+  -ms-transform: scale(0,0.25);
+  -moz-transform: scale(0,0.25);
+  -webkit-transform: scale(0,0.25);
+}
+.material .field-group.label-fixed.label-left .field--text--wrap .field--text--effect {
+  top: -100%;
+  left: -150%;
+  transform: scale(0,0.25);
+  -ms-transform: scale(0,0.25);
+  -moz-transform: scale(0,0.25);
+  -webkit-transform: scale(0,0.25);
+}
+.material .field-group.is-focus .field--text--wrap .field--text--effect,
+.material .field-group.label-float.label-left.is-focus .field--text--wrap .field--text--effect,
+.material .field-group.label-fixed.label-left.is-focus .field--text--wrap .field--text--effect {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+}
+.material .field-group.label-float.label-left.is-focus .field--text--wrap,
+.material .field-group.label-float.label-left:not(.is-empty) .field--text--wrap,
+.material .field-group.label-fixed.label-left .field--text--wrap {
+  width: calc(100% - 140px);
+}
+.material .field-group textarea.field-style {
+  display: block;
+  position: relative;
+  width: 100%;
+  line-height: 20px;
+  font-size: 0.875em;
+  border: none;
+  background: transparent;
+  outline: none;
+  resize: vertical;
+  padding: 4px;
+  margin-bottom: 5px;
+}
+.material .field-group textarea.field-style ~ .field-border {
+  display: none;
+}
+
+/* Radio */
+.material label.radio {
+  display: inline-block;
+  position: relative;
+  line-height: 18px;
+  font-size: 0.875em;
+  font-weight: normal;
+  margin: 10px 0;
+  padding-left: 34px;
+  cursor: pointer;
+}
+.material label.radio > input[type="radio"] {
+  display: none;
+}
+.material label.radio input ~ .radio--effect {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0,0,0,.2);
+  border-radius: 100%;
+  top: -16px;
+  left: -7px;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+}
+.material label.radio input ~ .radio--pin {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #777;
+  background-color: #fff;
+  border-radius: 100%;
+  top: 1px;
+  left: 9px;
+  transition: border .25s cubic-bezier(0.4,0,1,1);
+  -ms-transition: border .25s cubic-bezier(0.4,0,1,1);
+  -moz-transition: border .25s cubic-bezier(0.4,0,1,1);
+  -webkit-transition: border .25s cubic-bezier(0.4,0,1,1);
+}
+.material label.radio input:checked ~ .radio--pin {
+  border-color: #673ab7;
+}
+.material label.radio input:disabled ~ .radio--pin {
+  border-color: #ccc;
+}
+.material label.radio input:checked:disabled ~ .radio--pin {
+  border-color: #d1c4e9;
+}
+.material label.radio input ~ .radio--pin .radio--pin--check {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #673ab7;
+  border-radius: 100%;
+  top: 2px;
+  left: 2px;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  transition: all .25s cubic-bezier(0.4,0,0.2,1);
+  -ms-transition: all .25s cubic-bezier(0.4,0,0.2,1);
+  -moz-transition: all .25s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: all .25s cubic-bezier(0.4,0,0.2,1);
+}
+.material label.radio input:checked ~ .radio--pin .radio--pin--check {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+}
+.material label.radio input:disabled ~ .radio--pin .radio--pin--check {
+  background-color: #d1c4e9;
+}
+
+/* Checkbox */
+.material label.checkbox {
+  display: inline-block;
+  position: relative;
+  line-height: 18px;
+  font-size: 0.875em;
+  font-weight: normal;
+  margin: 10px 0;
+  padding-left: 34px;
+  cursor: pointer;
+}
+.material label.checkbox > input[type="checkbox"] {
+  display: none;
+}
+.material label.checkbox input ~ .checkbox--effect {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0,0,0,.2);
+  border-radius: 100%;
+  top: -16px;
+  left: -7px;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+}
+.material label.checkbox input ~ .checkbox--pin {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #777;
+  background-color: #fff;
+  border-radius: 2px;
+  top: 0;
+  left: 9px;
+  transition: border .25s cubic-bezier(0.4,0,1,1);
+  -ms-transition: border .25s cubic-bezier(0.4,0,1,1);
+  -moz-transition: border .25s cubic-bezier(0.4,0,1,1);
+  -webkit-transition: border .25s cubic-bezier(0.4,0,1,1);
+}
+.material label.checkbox input:checked ~ .checkbox--pin {
+  border-color: #673ab7;
+}
+.material label.checkbox input:disabled ~ .checkbox--pin {
+  border-color: #ccc;
+}
+.material label.checkbox input:checked:disabled ~ .checkbox--pin {
+  border-color: #d1c4e9;
+}
+.material label.checkbox input ~ .checkbox--pin .checkbox--pin--check {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  left: 2px;
+  bottom: 8px;
+  transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.material label.checkbox input:checked ~ .checkbox--pin .checkbox--pin--check {
+  width: 7px;
+  height: 11px;
+  border-color: #673ab7;
+}
+.material label.checkbox input:checked:disabled ~ .checkbox--pin .checkbox--pin--check {
+  border-color: #d1c4e9;
+}
+
+/* Toggle Switch */
+.material label.toggle {
+  display: inline-block;
+  position: relative;
+  line-height: 18px;
+  font-size: 0.875em;
+  font-weight: normal;
+  margin: 10px 0;
+  padding-left: 53px;
+  cursor: pointer;
+}
+.material label.toggle > input[type="checkbox"] {
+  display: none;
+}
+.material label.toggle input ~ .toggle--pin {
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  background-color: #999;
+  border-radius: 15px;
+  top: 1px;
+  left: 10px;
+  transition: background-color .25s cubic-bezier(0.4,0,1,1);
+  -ms-transition: background-color .25s cubic-bezier(0.4,0,1,1);
+  -moz-transition: background-color .25s cubic-bezier(0.4,0,1,1);
+  -webkit-transition: background-color .25s cubic-bezier(0.4,0,1,1);
+}
+.material label.toggle input:checked ~ .toggle--pin {
+  background-color: #673ab7;
+}
+.material label.toggle input:disabled ~ .toggle--pin {
+  background-color: #ccc;
+}
+.material label.toggle input:checked:disabled ~ .toggle--pin {
+  background-color: #d1c4e9;
+}
+.material label.toggle input ~ .toggle--pin .toggle--pin--dot {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #999;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  top: -4px;
+  left: -5px;
+  transition: left .25s cubic-bezier(0.4,0,0.2,1), border .25s cubic-bezier(0.4,0,1,1);
+  -ms-transition: left .25s cubic-bezier(0.4,0,0.2,1), border .25s cubic-bezier(0.4,0,1,1);
+  -moz-transition: left .25s cubic-bezier(0.4,0,0.2,1), border .25s cubic-bezier(0.4,0,1,1);
+  -webkit-transition: left .25s cubic-bezier(0.4,0,0.2,1), border .25s cubic-bezier(0.4,0,1,1);
+}
+.material label.toggle input:checked ~ .toggle--pin .toggle--pin--dot {
+  border-color: #673ab7;
+  left: 13px;
+}
+.material label.toggle input:disabled ~ .toggle--pin .toggle--pin--dot {
+  border-color: #ccc;
+}
+.material label.toggle input:checked:disabled ~ .toggle--pin .toggle--pin--dot {
+  border-color: #d1c4e9;
+}
+
+/* Range Slider */
+.material .slider {
+  position: relative;
+  padding: 14px 50px 14px 0;
+  margin: 20px 0;
+}
+.material .slider.dual-bound {
+  padding-left: 50px;
+}
+.material .slider .slider--rail {
+  position: relative;
+  height: 2px;
+}
+.material .slider .slider--rail:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: calc(100% - 16px);
+  height: 2px;
+  background: #ccc;
+  top: 0;
+  left: 8px;
+  cursor: pointer;
+}
+.material .slider .slider--rail .slider--rangebar {
+  position: absolute;
+  height: 2px;
+  background: #666;
+  top: 0;
+  left: 8px;
+  cursor: pointer;
+}
+.material .slider .slider--rail .slider--drag--start,
+.material .slider .slider--rail .slider--drag--end {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #666;
+  background: #fff;
+  border-radius: 100%;
+  top: -7px !important;
+  cursor: pointer;
+  transform-origin: center center;
+  -ms-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transition: transform .25s cubic-bezier(0.4,0,0.2,1);
+  -ms-transition: transform .25s cubic-bezier(0.4,0,0.2,1);
+  -moz-transition: transform .25s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: transform .25s cubic-bezier(0.4,0,0.2,1);
+}
+.material .slider .slider--rail .slider--drag--start:active,
+.material .slider .slider--rail .slider--drag--end:active {
+  transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+}
+.material .slider .slider--currentbox,
+.material .slider .slider--startbox,
+.material .slider .slider--endbox {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  background: #666;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0,0,0,.1);
+  top: -1px;
+  right: 0;
+  transition: box-shadow .25s cubic-bezier(0.4,0,0.2,1);
+  -ms-transition: box-shadow .25s cubic-bezier(0.4,0,0.2,1);
+  -moz-transition: box-shadow .25s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: box-shadow .25s cubic-bezier(0.4,0,0.2,1);
+}
+.material .slider .slider--startbox {
+  left: 0;
+  right: auto;
+}
+.material .slider .slider--currentbox.changed,
+.material .slider .slider--startbox.changed,
+.material .slider .slider--endbox.changed {
+  box-shadow: 0 0 3px rgba(0,0,0,0.15), 1px 3px 8px rgba(0,0,0,0.3);
+}
+.material .slider .slider--currentbox:before,
+.material .slider .slider--endbox:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 6px solid #666;
+  border-bottom: 4px solid transparent;
+  top: 11px;
+  left: -6px;
+}
+.material .slider .slider--startbox:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 6px solid #666;
+  border-bottom: 4px solid transparent;
+  top: 11px;
+  right: -6px;
+}
+.material .slider .slider--currentbox .current-value,
+.material .slider .slider--startbox .start-value,
+.material .slider .slider--endbox .end-value {
+  position: absolute;
+  width: 36px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 0.875em;
+  color: #212121;
+  background: #fff;
+  border-radius: 2px;
+  text-align: center;
+  top: 2px;
+  left: 2px;
+}
+.material .slider.primary .slider--rail .slider--rangebar,
+.material .slider.primary .slider--currentbox,
+.material .slider.primary .slider--startbox,
+.material .slider.primary .slider--endbox {
+  background: #673ab7;
+}
+.material .slider.info .slider--rail .slider--rangebar,
+.material .slider.info .slider--currentbox,
+.material .slider.info .slider--startbox,
+.material .slider.info .slider--endbox {
+  background: #00bcd4;
+}
+.material .slider.success .slider--rail .slider--rangebar,
+.material .slider.success .slider--currentbox,
+.material .slider.success .slider--startbox,
+.material .slider.success .slider--endbox {
+  background: #4caf50;
+}
+.material .slider.warning .slider--rail .slider--rangebar,
+.material .slider.warning .slider--currentbox,
+.material .slider.warning .slider--startbox,
+.material .slider.warning .slider--endbox {
+  background: #ff9800;
+}
+.material .slider.danger .slider--rail .slider--rangebar,
+.material .slider.danger .slider--currentbox,
+.material .slider.danger .slider--startbox,
+.material .slider.danger .slider--endbox {
+  background: #f44336;
+}
+.material .slider.primary .slider--rail .slider--drag--start,
+.material .slider.primary .slider--rail .slider--drag--end {
+  border-color: #673ab7;
+}
+.material .slider.info .slider--rail .slider--drag--start,
+.material .slider.info .slider--rail .slider--drag--end {
+  border-color: #00bcd4;
+}
+.material .slider.success .slider--rail .slider--drag--start,
+.material .slider.success .slider--rail .slider--drag--end {
+  border-color: #4caf50;
+}
+.material .slider.warning .slider--rail .slider--drag--start,
+.material .slider.warning .slider--rail .slider--drag--end {
+  border-color: #ff9800;
+}
+.material .slider.danger .slider--rail .slider--drag--start,
+.material .slider.danger .slider--rail .slider--drag--end {
+  border-color: #f44336;
+}
+.material .slider.primary .slider--currentbox:before,
+.material .slider.primary .slider--startbox:before,
+.material .slider.primary .slider--endbox:before {
+  border-left-color: #673ab7;
+  border-right-color: #673ab7;
+}
+.material .slider.info .slider--currentbox:before,
+.material .slider.info .slider--startbox:before,
+.material .slider.info .slider--endbox:before {
+  border-left-color: #00bcd4;
+  border-right-color: #00bcd4;
+}
+.material .slider.success .slider--currentbox:before,
+.material .slider.success .slider--startbox:before,
+.material .slider.success .slider--endbox:before {
+  border-left-color: #4caf50;
+  border-right-color: #4caf50;
+}
+.material .slider.warning .slider--currentbox:before,
+.material .slider.warning .slider--startbox:before,
+.material .slider.warning .slider--endbox:before {
+  border-left-color: #ff9800;
+  border-right-color: #ff9800;
+}
+.material .slider.danger .slider--currentbox:before,
+.material .slider.danger .slider--startbox:before,
+.material .slider.danger .slider--endbox:before {
+  border-left-color: #f44336;
+  border-right-color: #f44336;
+}
+
+/* Pagination */
+.material .pagination {
+  display: block;
+  margin: 20px auto;
+  border-radius: 0;
+}
+.material .pagination > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.material .pagination > ul > li {
+  display: inline-block;
+  vertical-align: top;
+}
+.material .pagination > ul > li > a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.8125em;
+  color: #999;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 0 3px;
+  padding: 0;
+  transition: background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+  -ms-transition: background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+  -moz-transition: background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: background-color .25s cubic-bezier(0.4,0,0.2,1), color .25s cubic-bezier(0.4,0,0.2,1);
+}
+.material .pagination > ul > li > a:hover {
+  background-color: #eee;
+}
+.material .pagination > ul > li.active > a {
+  color: #fff;
+  background-color: #666;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.material .pagination > ul > li > a .link--effect--wrap {
+  border-radius: 30px;
+}
+.material .pagination.primary > ul > li.active > a { background: #673ab7; }
+.material .pagination.info > ul > li.active > a { background: #00bcd4; }
+.material .pagination.success > ul > li.active > a { background: #4caf50; }
+.material .pagination.warning > ul > li.active > a { background: #ff9800; }
+.material .pagination.danger > ul > li.active > a { background: #f44336; }
+.material .pagination > ul > li.active > a .link--effect {
+  background-color: rgba(255,255,255,.2);
+}
+.material .pagination > ul > li > a i.material-icons {
+  display: inline-block;
+  height: 30px;
+  line-height: 26px;
+  font-size: 1.25em;
+  vertical-align: middle;
+}
+.material .pagination > ul > li.ellipsis {
+  margin: 0 12px;
+}
+.material .pagination > ul > li.ellipsis > i.material-icons {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.75rem;
+  color: #ccc;
+  vertical-align: middle;
+}
+.material .pagination > ul > li.direct > a {
+  width: auto;
+  padding: 0 15px;
+}
+
+/* Tooltip */
+.material .tooltip {
+  z-index: inherit;
+  font-family: inherit;
+  opacity: inherit;
+}
+.tooltip--temp--wrap {
+  position: absolute;
+  z-index: 1100;
+  line-height: 16px;
+  font-size: 0.75em;
+  color: #212121;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  padding: 11px 25px;
+}
+.tooltip--temp--wrap.top:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 6px solid #fff;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  left: 25px;
+  bottom: -6px;
+}
+.tooltip--temp--wrap.left:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 6px solid #fff;
+  border-bottom: 4px solid transparent;
+  top: 15px;
+  right: -6px;
+}
+.tooltip--temp--wrap.right:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 6px solid #fff;
+  border-bottom: 4px solid transparent;
+  top: 15px;
+  left: -6px;
+}
+.tooltip--temp--wrap.bottom:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 6px solid #fff;
+  top: -6px;
+  left: 25px;
+}
+
+
+
+
+
