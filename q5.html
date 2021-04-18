@@ -124,34 +124,25 @@
                             <input type="hidden" name="questionIds" value="18" />
                             <input type="hidden" name="answers" value="不太有困擾" />
                             <div class="row">
-                                <div class="col-sm-12 fs26 fw6 text-center">E2</div>
+                                <div class="col-sm-12 color-orange fs36 fw3 lh125 text-center">保養重點</div>
+                                <div class="col-sm-12 color-orange list-order fs48 lh125 text-center">E2</div>
+                                <div class="col-sm-12 my-60 color-gray fs40 text-center">皺紋、細紋方面，您的困擾程度為何</div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-12 fs26 fw6 text-center">皺紋、細紋方面，您的困擾程度為何</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-offset-2 col-sm-5">
-                                    <label class="radio-inline fs16 fw6 pl16">
+                                <div class="radio-btn-group text-center">
+                                    <label class="radio-btn">
                                         <input type="radio" value="完全沒有困擾" required="required" id="answer1" name="answer">完全沒有困擾
                                     </label>
-                                </div>
-                                <div class="col-sm-offset-2 col-sm-5">
-                                    <label class="radio-inline fs16 fw6 pl16">
+                                    <label class="radio-btn">
                                         <input type="radio" value="不太有困擾" required="required" id="answer2" name="answer" checked="checked">不太有困擾
                                     </label>
-                                </div>
-                                <div class="col-sm-offset-2 col-sm-5">
-                                    <label class="radio-inline fs16 fw6 pl16">
+                                    <label class="radio-btn">
                                         <input type="radio" value="還好" required="required" id="answer3" name="answer">還好
                                     </label>
-                                </div>
-                                <div class="col-sm-offset-2 col-sm-5">
-                                    <label class="radio-inline fs16 fw6 pl16">
+                                    <label class="radio-btn">
                                         <input type="radio" value="稍有困擾" required="required" id="answer4" name="answer">稍有困擾
                                     </label>
-                                </div>
-                                <div class="col-sm-offset-2 col-sm-5">
-                                    <label class="radio-inline fs16 fw6 pl16">
+                                    <label class="radio-btn">
                                         <input type="radio" value="非常困擾" required="required" id="answer5" name="answer">非常困擾
                                     </label>
                                 </div>
@@ -245,6 +236,7 @@
     <!-- tinymce -->
     <script src="/Portal_MADENFORM/plugins/tinymce/tinymce.min.js"></script>
     <script src="/Portal_MADENFORM/plugins/tinymce/jquery.tinymce.min.js"></script>
+    <script src="/Portal_MADENFORM/pantuo/js/customize.js"></script>
     <!-- Page script -->
     <script type="text/javascript">
         var token = $('#_csrf').attr('content');
