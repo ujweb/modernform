@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>媚登峰官方網站 - 線上問卷</title>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta id="_csrf" name="_csrf" content="fa6802de-0e25-417e-a07b-03a051921cba" />
+        <meta id="_csrf_header" name="_csrf_header" content="X-CSRF-TOKEN" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="copyright" content="媚登峰健康事業股份有限公司">
+        <meta name="Author" content="磐拓創意">
+        <!-- Favicon -->
+        <link href="/Portal_MADENFORM/pantuo/images/favicon.ico" rel="icon" />
+        <link href="/Portal_MADENFORM/pantuo/images/favicon.ico" rel="shortcut icon" />
+        <link href="/Portal_MADENFORM/pantuo/images/apple-touch-icon.png" rel="apple-touch-icon" />
+        <!-- CSS -->
+        <link href="/Portal_MADENFORM/pantuo/css/style.css" rel="stylesheet">
+        <!-- html5shiv.min.js 讓 IE8 支援 HTML5 元素與媒體查詢 -->
+        <!-- respond.js 讓 IE8 支援 CSS3，無法在 file:// 協定下運作 -->
+        <!--[if lt IE 9]>
+            <script src="/Portal_MADENFORM/pantuo/js/html5shiv-3.7.3.min.js"></script>
+            <script src="/Portal_MADENFORM/pantuo/js/respond-1.4.2.min.js"></script>
+            <script src="/Portal_MADENFORM/pantuo/js/IE7-2.1.js"></script>
+            <script src="/Portal_MADENFORM/pantuo/js/jquery.pngFix-1.2.js"></script>
+        <![endif]-->
+        <link href="/Portal_MADENFORM/pantuo/css/magnific-popup-1.0.0.css" rel="stylesheet">
+        <link href="/Portal_MADENFORM/pantuo/css/plugin-mCustomScrollbar.css" rel="stylesheet">
+        <!-- Date Picker -->
+        <link rel="stylesheet" href="/Portal_MADENFORM/plugins/datepicker/datepicker3.css" />
+        <!-- Date Time Picker -->
+        <link rel="stylesheet" href="/Portal_MADENFORM/plugins/datetimepicker/bootstrap-datetimepicker.css" />
+        <!-- Daterange picker -->
+        <link rel="stylesheet" href="/Portal_MADENFORM/plugins/daterangepicker/daterangepicker-bs3.css" />
+        <!-- DataTables -->
+        <link rel="stylesheet" href="/Portal_MADENFORM/plugins/datatables/dataTables.bootstrap.css" />
+        <link rel="stylesheet" href="/Portal_MADENFORM/plugins/datatables/extensions/Responsive-2.2.2/css/responsive.dataTables.min.css" />
+        <!-- Select2 -->
+        <link href="/Portal_MADENFORM/plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
+        <!-- iCheck -->
+        <link rel="stylesheet" href="/Portal_MADENFORM/plugins/iCheck/square/blue.css" />
+        <!-- jPList CSS -->
+        <link rel="stylesheet" href="/Portal_MADENFORM/plugins/jplist/1.2.0/jplist.styles.css" />
+        <!-- mobile -->
+        <link href="/Portal_MADENFORM/dist/css/mobile.css" rel="stylesheet">
+        <style type="text/css">
+            .datepicker.dropdown-menu {
+                z-index: 10000 !important;
+            }
+            .p10 {
+                padding: 10px !important;
+            }
+            .p40 {
+                padding: 40px !important;
+            }
+            .fs26 {
+                font-size: 26px !important;
+            }
+            .fs16 {
+                font-size: 16px !important;
+            }
+            .fw6 {
+                font-weight: 600 !important;
+            }
+            .pl16 {
+                padding-left: 16px !important;
+            }
+            .s128 {
+                width: 128px;
+                height: 128px;
+            }
+        </style>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header id="header" class="clearfix">
+            <div class="top-links clearfix">
+                <div class="container">
+                    <!--會員登入後顯示↓-->
+                    <!--會員登入後顯示↑-->
+                    <ul class="reset">
+                        <!--會員登入後隱藏↓-->
+                        <li><a href="/Portal_MADENFORM/member/login" title="會員登入"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                        <!--會員登入後隱藏↑-->
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar navbar-custom">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="#" title="媚登峰健康事業股份有限公司" class="navbar-brand">媚登峰健康事業股份有限公司</a>
+                        <button id="nav-control" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="/Portal_MADENFORM/" class="dropdown-toggle direct-link" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    返回官網<p class="text-uppercase text-center hidden">Return</p>
+                                    <span class="caret">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="gotop">TOP</div>
+        <div id="banner"></div>
+        <!--Contents-->
+        <div id="contents" class="content-margin clearfix">
+            <div class="container"></div>
+            <div class="container">
+                <div class="section-contents">
+                    <h2><span>線上問卷</span></h2>
+                    <div class="M_contents">
+                        <div id="M_member">
+                            <form id="questionForm" action="/Portal_MADENFORM/quests/sections/4/answers" method="post">
+                                <input type="hidden" name="_csrf" value="fa6802de-0e25-417e-a07b-03a051921cba" />
+                                <input type="hidden" name="questionIds" value="11" />
+                                <input type="hidden" name="answers" value="6-8小時" />
+                                <div class="row">
+                                    <div class="col-sm-12 fs26 fw6 text-center">D1</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 fs26 fw6 text-center">平均睡眠時間</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-offset-2 col-sm-5">
+                                        <label class="radio-inline fs16 fw6 pl16">
+                                            <input type="radio" value="高於8小時" required="required" id="answer1" name="answer">高於8小時
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-offset-2 col-sm-5">
+                                        <label class="radio-inline fs16 fw6 pl16">
+                                            <input type="radio" value="6-8小時" required="required" id="answer2" name="answer" checked="checked">6-8小時
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-offset-2 col-sm-5">
+                                        <label class="radio-inline fs16 fw6 pl16">
+                                            <input type="radio" value="4-6小時" required="required" id="answer3" name="answer">4-6小時
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-offset-2 col-sm-5">
+                                        <label class="radio-inline fs16 fw6 pl16">
+                                            <input type="radio" value="少於4小時" required="required" id="answer4" name="answer">少於4小時
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="container_min s-full f fb flex-between p25">
+                                <div style="float: left;">
+                                    <a href="/Portal_MADENFORM/quests/sections/3/questions/26">
+                                        <input type="image" src="https://fujimi.me/static/images/diagnosis/btn_prev.svg" alt="send" onclick="prev();" />
+                                    </a>
+                                </div>
+                                <div style="float: right;">
+                                    <a href="/Portal_MADENFORM/quests/sections/4/questions/12">
+                                        <input type="image" src="https://fujimi.me/static/images/diagnosis/btn_next.svg" alt="send" onclick="next();" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer id="footer">
+            <div class="cominfo">
+                <ul class="cominfo-main clearfix container">
+                    <li><a href="tel:886227218156"><i class="fa fa-phone" aria-hidden="true"></i>886-2-27218156</a></li>
+                    <li><a href="https://goo.gl/maps/U6Em6JDCDL4x3vix9" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>10688臺北市大安區安和路1段29號11樓</a></li>
+                </ul>
+            </div>
+            <div class="copyright container-fluid">
+                媚登峰健康事業股份有限公司<span>Copyright © 2020 All Rights Reserved.</span>
+            </div>
+        </footer>
+        <!-- Bootstrap core JavaScript================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="/Portal_MADENFORM/pantuo/js/jquery-3.1.0.min.js"></script>
+        <script src="/Portal_MADENFORM/pantuo/js/bootstrap-3.3.7.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="/Portal_MADENFORM/pantuo/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="/Portal_MADENFORM/pantuo/js/jquery.easing-1.3.min.js"></script>
+        <script src="/Portal_MADENFORM/pantuo/js/common.min.js"></script>
+        <script src="/Portal_MADENFORM/pantuo/js/common.min.2.js"></script>
+        <script src="/Portal_MADENFORM/pantuo/js/controller.js"></script>
+        <script src="/Portal_MADENFORM/pantuo/js/wow.min-1.1.3.js"></script>
+        <script src="/Portal_MADENFORM/pantuo/js/common.min.3.js"></script>
+        <script src="/Portal_MADENFORM/pantuo/js/modernizr.js"></script>
+        <script src="/Portal_MADENFORM/pantuo/js/jquery.bootstrap-touchspin.js"></script>
+        <script src="/Portal_MADENFORM/pantuo/js/jquery.magnific-popup-1.0.0.min.js"></script>
+        <script src="/Portal_MADENFORM/pantuo/js/jquery.mCustomScrollbar-3.0.2.min.js"></script>
+        <!-- Fotorama -->
+        <script src="/Portal_MADENFORM/pantuo/js/fotorama-4.6.4.min.js"></script>
+        <!-- Fix 'Unable to preventDefault inside passive event listener due to target being treated as passive.' in Chrome -->
+        <script src="/Portal_MADENFORM/pantuo/js/chrome56-fix.js"></script>
+        <!-- DataTables -->
+        <script src="/Portal_MADENFORM/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="/Portal_MADENFORM/plugins/datatables/dataTables.bootstrap.min.js"></script>
+        <script src="/Portal_MADENFORM/plugins/datatables/extensions/Responsive-2.2.2/js/dataTables.responsive.min.js"></script>
+        <script src="/Portal_MADENFORM/plugins/datatables/extensions/Responsive-2.2.2/js/responsive.bootstrap.min.js"></script>
+        <script src="/Portal_MADENFORM/plugins/datatables/jquery.spring-friendly.js"></script>
+        <script src="/Portal_MADENFORM/plugins/datatables/extensions/jquery.dataTables.rowReordering.js"></script>
+        <script src="/Portal_MADENFORM/plugins/datatables/extensions/jquery.dataTables.fnSetFilteringDelay.js"></script>
+        <script src="/Portal_MADENFORM/plugins/datatables/extensions/jquery.dataTables.fnExternalFormFilter.js"></script>
+        <!-- Select2 -->
+        <script src="/Portal_MADENFORM/plugins/select2/select2.full.min.js"></script>
+        <!-- Bootbox -->
+        <script src="/Portal_MADENFORM/plugins/bootbox/bootbox.min.js"></script>
+        <script src="/Portal_MADENFORM/plugins/moment/js/moment.min.js"></script>
+        <!-- Date Picker -->
+        <script src="/Portal_MADENFORM/plugins/datepicker/bootstrap-datepicker.js"></script>
+        <script src="/Portal_MADENFORM/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js"></script>
+        <!-- Date Time Picker -->
+        <script src="/Portal_MADENFORM/plugins/datetimepicker/bootstrap-datetimepicker.js"></script>
+        <script src="/Portal_MADENFORM/plugins/datetimepicker/locales/bootstrap-datetimepicker.zh-TW.js"></script>
+        <!-- Daterange picker -->
+        <script src="/Portal_MADENFORM/plugins/daterangepicker/daterangepicker.js"></script>
+        <script src="/Portal_MADENFORM/plugins/jquery-validation/jquery.validate.min.js"></script>
+        <script src="/Portal_MADENFORM/plugins/jquery-validation/additional-methods.js"></script>
+        <script src="/Portal_MADENFORM/plugins/jquery-validation/localization/messages_zh_TW.min.js"></script>
+        <script src="/Portal_MADENFORM/plugins/jquery-validation/localization/additional-messages_zh_TW.js"></script>
+        <script src="/Portal_MADENFORM/plugins/jquery-validation/jquery.validate.bootstrap.js"></script>
+        <script src="/Portal_MADENFORM/plugins/jquery-number/jquery.number.min.js"></script>
+        <!-- iCheck -->
+        <script src="/Portal_MADENFORM/plugins/iCheck/icheck.min.js"></script>
+        <!-- IE 10+ / Edge support via babel-polyfill: https://babeljs.io/docs/en/babel-polyfill/ -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+        <!-- jPList Library -->
+        <script src="/Portal_MADENFORM/plugins/jplist/1.2.0/jplist.min.js"></script>
+        <!-- youtube -->
+        <script src="/Portal_MADENFORM/plugins/youtube/iframe_api.js"></script>
+        <!-- tinymce -->
+        <script src="/Portal_MADENFORM/plugins/tinymce/tinymce.min.js"></script>
+        <script src="/Portal_MADENFORM/plugins/tinymce/jquery.tinymce.min.js"></script>
+        <!-- Page script -->
+        <script type="text/javascript">
+            var token = $('#_csrf').attr('content');
+            var header = $('#_csrf_header').attr('content');
+            var lang;
+            $(document).ready(function () {
+                lang = "zh-TW";
+                showCart();
+                $.extend(true, $.fn.dataTable.defaults, {
+                    "stateSave": true,
+                    "stateDuration": -1
+                });
+                bootbox.setDefaults({
+                    locale: "zh_TW"
+                });
+                $.extend(true, $.fn.dataTable.defaults, {
+                    "language": {
+                        "url": "\/Portal_MADENFORM\/plugins\/datatables\/plug-ins\/i18n\/zh_TW.json"
+                    }
+                });
+                $.ajaxSetup({
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader(header, token);
+                    },
+                    error: function (jqXHR, exception) {
+                        if (jqXHR.status === 0) {
+                            bootbox.hideAll();
+                            bootbox.alert('Not connect.\n Verify Network.');
+                            /*
+                            } else if (jqXHR.status == 401) {
+                                $(location).attr('href', 'login');
+                            */
+                        } else if (jqXHR.status == 403) {
+                            //$(location).attr('href', '403');
+                            document.open();
+                            document.write(jqXHR.responseText);
+                            document.close();
+                        } else if (jqXHR.status == 404) {
+                            bootbox.hideAll();
+                            bootbox.alert('Requested page not found. [404]');
+                        } else if (jqXHR.status == 500) {
+                            bootbox.hideAll();
+                            bootbox.alert('Internal Server Error. [500]' + " " + $.parseJSON(jqXHR.responseText).exception.message);
+                        } else if (exception === 'parsererror') {
+                            bootbox.hideAll();
+                            bootbox.alert('Requested JSON parse failed.');
+                        } else if (exception === 'timeout') {
+                            bootbox.hideAll();
+                            bootbox.alert('Time out error.');
+                        } else if (exception === 'abort') {
+                            bootbox.hideAll();
+                            bootbox.alert('Ajax request aborted.');
+                        } else {
+                            bootbox.hideAll();
+                            bootbox.alert('Uncaught Error.\n' + jqXHR.responseText);
+                        }
+                    },
+                    cache: false
+                });
+                //Initialize Select2 Elements
+                //$(".select2").select2();
+                $('.select2').select2({
+                    width: '100%',
+                    allowClear: true,
+                    language: {
+                        noResults: function (e) {
+                            return "\u6C92\u6709\u5339\u914D\u7D50\u679C...";
+                        }
+                    }
+                });
+                //iCheck for checkbox and radio inputs
+                $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+                    checkboxClass: 'icheckbox_minimal-blue',
+                    radioClass: 'iradio_minimal-blue'
+                });
+                //Red color scheme for iCheck
+                $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+                    checkboxClass: 'icheckbox_minimal-red',
+                    radioClass: 'iradio_minimal-red'
+                });
+                //Flat red color scheme for iCheck
+                $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+                    checkboxClass: 'icheckbox_flat-orange',
+                    radioClass: 'iradio_flat-green'
+                });
+                $.validator.setDefaults({
+                    normalizer: function (value) {
+                        // Trim the value of every element
+                        return $.trim(value);
+                    }
+                });
+                $(document).on('focus', ':input', function () {
+                    $(this).attr('autocomplete', 'off');
+                });
+                $("body").on("click", ".downloadBtn", function (e) {
+                    preventDoubleClick(this);
+                });
+                document.addEventListener("touchstart", function () { }, false);
+            });
+            //Backdrop z-index fix
+            $(document).on('show.bs.modal', '.modal', function () {
+                var zIndex = 1040 + (10 * $('.modal:visible').length);
+                $(this).css('z-index', zIndex);
+                setTimeout(function () {
+                    $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
+                }, 0);
+            });
+            function showCart() {
+                $.ajax({
+                    url: "\/Portal_MADENFORM\/cart\/totalQty",
+                    type: 'GET',
+                    success: function (totalQty) {
+                        //console.log('totalQty=' + totalQty);
+                        $("#cartTotalQty").html($.number(totalQty));
+                    }
+                });
+            }
+            if ($.validator) {
+                //fix: when several input elements shares the same name, but has different id-ies....
+                $.validator.prototype.elements = function () {
+                    var validator = this,
+                        rulesCache = {};
+                    // select all valid inputs inside the form (no submit or reset buttons)
+                    // workaround $Query([]).add until http://dev.jquery.com/ticket/2114 is solved
+                    return $([]).add(this.currentForm.elements)
+                        .filter(":input")
+                        .not(":submit, :reset, :image, [disabled]")
+                        .not(this.settings.ignore)
+                        .filter(function () {
+                            var elementIdentification = this.id || this.name;
+                            !elementIdentification && validator.settings.debug && window.console && console.error("%o has no id nor name assigned", this);
+                            // select only the first element for each name, and only those with rules specified
+                            if (elementIdentification in rulesCache || !validator.objectLength($(this).rules()))
+                                return false;
+                            rulesCache[elementIdentification] = true;
+                            return true;
+                        });
+                };
+            }
+            //Disable the HTML element after clicking and enable it back again after 1 second.
+            function preventDoubleClick(ele) {
+                $(ele).attr("disabled", true);
+                setTimeout(function () { $(ele).removeAttr("disabled") }, 1000);
+            }
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("input[name='answer']").change(function () {
+                    $("input[name='answers']").val($("input[name='answer']:checked").val());
+                    $("#questionForm").submit();
+                });
+                $("#quest").on("click", function (e) {
+                    e.preventDefault();
+                    if ($("#questionForm").valid()) $("input[name='answer']").trigger('change');
+                });
+            });
+            function prev() {
+                console.log("prev");
+            }
+            function next() {
+                console.log("next");
+            }
+        </script>
+    </body>
+</html>
