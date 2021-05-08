@@ -1,0 +1,216 @@
+body {
+  background-image: url('../images/home/texture-line-bg@3x.png');
+  background-size: contain;
+  background-position: center 88.5%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.content-form .section-contents h2,
+.content-form .section-contents-one h2 {
+  position: relative;
+  margin: 0 0 30px 0;
+  padding: 0;
+  height: 10px;
+  border-bottom: 6px solid rgb(234, 149, 68, 0.2);
+}
+
+.content-form .section-contents h2 span,
+.content-form .section-contents-one h2 span {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  font-size: 0;
+  border-bottom: 6px solid #ff893d;
+}
+
+.content-form .section-contents h2 span.lv1,
+.content-form .section-contents-one h2 span.lv1 {
+  width: 20%;
+}
+.content-form .section-contents h2 span.lv2,
+.content-form .section-contents-one h2 span.lv2 {
+  width: 40%;
+}
+.content-form .section-contents h2 span.lv3,
+.content-form .section-contents-one h2 span.lv3 {
+  width: 50%;
+}
+.content-form .section-contents h2 span.lv4,
+.content-form .section-contents-one h2 span.lv4 {
+  width: 60%;
+}
+.content-form .section-contents h2 span.lv5,
+.content-form .section-contents-one h2 span.lv5 {
+  width: 100%;
+}
+
+.mt-60,
+.my-60 {
+  margin-top: 60px;
+}
+.mb-60,
+.my-60 {
+  margin-bottom: 60px;
+}
+.color-orange {
+  color: #ff893d;
+}
+.color-gray {
+  color: #5e5e5e;
+}
+.fs24 {
+  font-size: 24px !important;
+}
+.fs36 {
+  font-size: 36px !important;
+}
+.fs40 {
+  font-size: 40px !important;
+}
+.fs48 {
+  font-size: 48px !important;
+}
+.fw3 {
+  font-weight: 300 !important;
+}
+.lh125 {
+  line-height: 1.25;
+}
+
+.content-form #M_member .form-control {
+  height: 60px;
+  padding: 5px 20px;
+  font-size: 18px;
+  line-height: 2;
+  background: #fff;
+  box-shadow: none;
+  border-radius: 8px;
+  border: 2px solid #ff893d;
+}
+.content-form #M_member select.form-control {
+  background-image: url("../images/survey/ic_select_arrow@3x.png");
+  background-size: 12px 6px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[src*="btn_prev"],
+input[src*="btn_next"] {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  padding: 72px 72px 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+input[src*="btn_prev"] {
+  background-image: url("../images/survey/btn_prev@3x.png");
+}
+input[src*="btn_prev"]:hover {
+  background-image: url("../images/survey/btn_prev_hover@3x.png");
+}
+input[src*="btn_next"] {
+  background-image: url("../images/survey/btn_next@3x.png");
+}
+input[src*="btn_next"]:hover {
+  background-image: url("../images/survey/btn_next_hover@3x.png");
+}
+.radio-btn-group {
+  margin: 0 auto 30px;
+  font-size: 0;
+}
+.radio-btn {
+  position: relative;
+  width: calc(100% - 30px);
+  padding: 10px;
+  color: #5e5e5e;
+  font-size: 20px;
+  font-weight: normal;
+  border: 2px solid #ff893d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.radio-btn:hover {
+  color: #fff;
+  background-color: #ff893d;
+}
+.radio-btn input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0;
+  opacity: 0;
+}
+.radio-btn span {
+  display: inline-block;
+}
+@media (min-width: 1024px) {
+  .mt-d-60,
+  .my-d-60 {
+    margin-top: 60px;
+  }
+  .mb-d-60,
+  .my-d-60 {
+    margin-bottom: 60px;
+  }
+  .fs24 {
+    font-size: 24px !important;
+  }
+  .fs36 {
+    font-size: 36px !important;
+  }
+  .fs40 {
+    font-size: 40px !important;
+  }
+  .fs48 {
+    font-size: 48px !important;
+  }
+  .radio-btn-group {
+    display: table;
+    border-spacing: 28px 0;
+  }
+  .radio-btn {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    font-size: 24px;
+  }
+  .radio-btn + .radio-btn {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 1023px) {
+  .mt-m-30,
+  .my-m-30 {
+    margin-top: 30px;
+  }
+  .mb-m-30,
+  .my-m-30 {
+    margin-bottom: 30px;
+  }
+  .fs24 {
+    font-size: 20px !important;
+  }
+  .fs36 {
+    font-size: 28px !important;
+  }
+  .fs40 {
+    font-size: 32px !important;
+  }
+  .fs48 {
+    font-size: 40px !important;
+  }
+  .radio-btn + .radio-btn {
+    margin-top: 20px;
+  }
+}
