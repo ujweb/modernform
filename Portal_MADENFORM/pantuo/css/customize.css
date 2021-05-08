@@ -184,6 +184,7 @@ input[src*="btn_next"]:hover {
     height: 200px;
     padding: 20px;
     font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.5);
   }
   .radio-btn + .radio-btn {
     margin-left: 40px;
