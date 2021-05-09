@@ -46,6 +46,10 @@ body {
   width: 100%;
 }
 
+.content-form .help-block {
+  color: #FF893D;
+}
+
 .mt-60,
 .my-60 {
   margin-top: 60px;
@@ -54,14 +58,41 @@ body {
 .my-60 {
   margin-bottom: 60px;
 }
+.mb-40,
+.my-40 {
+  margin-bottom: 40px;
+}
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pt-40,
+.py-40 {
+  padding-top: 40px;
+}
+.pb-40,
+.py-40 {
+  padding-bottom: 40px;
+}
 .color-orange {
   color: #ff893d;
 }
 .color-gray {
   color: #5e5e5e;
 }
+.border-top-orange-1 {
+  border-top: 1px solid #ff893d;
+}
+.border-bottom-orange-1 {
+  border-bottom: 1px solid #ff893d;
+}
 .fs24 {
-  font-size: 24px !important;
+  font-size: 20px !important;
+}
+@media (min-width: 768px) {
+  .fs24 {
+    font-size: 24px !important;
+  }
 }
 .fs36 {
   font-size: 36px !important;
@@ -77,6 +108,10 @@ body {
 }
 .lh125 {
   line-height: 1.25;
+}
+
+#cartForm {
+  margin-top: 40px;
 }
 
 .content-form #M_member .form-control {
