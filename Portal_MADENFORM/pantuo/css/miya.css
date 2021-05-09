@@ -230,7 +230,7 @@ a:hover, a:active, a:visited {
   background: -o-linear-gradient(top,  rgba(132,189,0,1) 0%,rgba(98,136,15,1) 100%);
   background: -ms-linear-gradient(top,  rgba(132,189,0,1) 0%,rgba(98,136,15,1) 100%);
   background: linear-gradient(to bottom,  rgba(132,189,0,1) 0%,rgba(98,136,15,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84bd00', endColorstr='#62880f',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84bd00', endColorstr='#FD730D',GradientType=0 );
 }
 .section-sidemenu h1:hover,
 .section-sidemenu h1.open {
@@ -242,7 +242,7 @@ a:hover, a:active, a:visited {
   background: -o-linear-gradient(top,  rgba(98,136,15,1) 0%,rgba(132,189,0,1) 100%);
   background: -ms-linear-gradient(top,  rgba(98,136,15,1) 0%,rgba(132,189,0,1) 100%);
   background: linear-gradient(to bottom,  rgba(98,136,15,1) 0%,rgba(132,189,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62880f', endColorstr='#84bd00',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FD730D', endColorstr='#84bd00',GradientType=0 );
 }
 .section-sidemenu h1.open {
     border-radius: 3px 3px 0 0;
@@ -285,7 +285,7 @@ a:hover, a:active, a:visited {
 .section-sidemenu ul.menu-main > li > a.open,
 .section-sidemenu ul.menu-main > li.current > a {
   color: #fff;
-  background: #62880f url('../images/home/ic_nav_close.png') no-repeat;
+  background: #FD730D url('../images/home/ic_nav_close.png') no-repeat;
   background-position: right 10px center;
 }
 .section-sidemenu ul.menu-sub {
@@ -315,7 +315,7 @@ a:hover, a:active, a:visited {
 .section-sidemenu ul.menu-sub > li > a:hover,
 .section-sidemenu ul.menu-sub > li > a.open,
 .section-sidemenu ul.menu-sub > li.current > a {
-  color: #62880f;
+  color: #FD730D;
 }
 .section-sidemenu ul.menu-grand {
   margin: 0;
@@ -335,7 +335,7 @@ a:hover, a:active, a:visited {
   line-height: 40px;
   padding: 0 20px 0 40px;
   color: #545454;
-  background: #ffffe7;
+  background: #FFDDC7;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -344,7 +344,7 @@ a:hover, a:active, a:visited {
 .section-sidemenu ul.menu-grand > li > a:hover,
 .section-sidemenu ul.menu-grand > li.current > a {
   color: #000;
-  background: #ffffe7 url('../images/home/ic_sidemenu_current.png') no-repeat;
+  background: #FFDDC7 url('../images/home/ic_sidemenu_current.png') no-repeat;
   background-position: left 32px center;
 }
 
@@ -371,7 +371,7 @@ a:hover, a:active, a:visited {
   }
   .section-sidemenu .cn {
     font-size: 16px;
-    color: #62880f;
+    color: #FD730D;
   }
 
   .section-sidemenu ul.menu-main,
@@ -394,7 +394,7 @@ a:hover, a:active, a:visited {
   .section-sidemenu ul.menu-main > li > a.open,
   .section-sidemenu ul.menu-main > li.current > a {
     color: #fff;
-    background: #62880f url(../images/home/ic_sidemenu_open.png) no-repeat;
+    background: #FD730D url(../images/home/ic_sidemenu_open.png) no-repeat;
     background-position: left 10px center;
   }
   .section-sidemenu ul.menu-sub {
@@ -416,8 +416,8 @@ a:hover, a:active, a:visited {
   .section-sidemenu ul.menu-sub > li > a:hover,
   .section-sidemenu ul.menu-sub > li > a.open,
   .section-sidemenu ul.menu-sub > li.current > a {
-    color: #62880f;
-    background: #ffffe7 url(../images/home/ic_sidemenu_current.png) no-repeat;
+    color: #FD730D;
+    background: #FFDDC7 url(../images/home/ic_sidemenu_current.png) no-repeat;
     background-position: left 18px center;
   }
 
@@ -464,8 +464,8 @@ a:hover, a:active, a:visited {
     display: inline-block;
     height: 40px;
     padding: 0 10px;
-    color: #4e7100;
-    border-bottom: 2px solid #4e7100;
+    color: #FF893D;
+    border-bottom: 2px solid #FF893D;
 }
 
 
@@ -7382,7 +7382,7 @@ fieldset[disabled] .btn-warning.focus {
 #M_registration tr:hover{ background:#fffff1;}
 #M_registration table tr:last-child td { border-bottom:1px solid #ccc;}
 #M_registration td a { color:#006699;}
-#M_registration td a:hover, #M_registration td a:focus { color: #62880f; text-decoration: underline; outline: none;}
+#M_registration td a:hover, #M_registration td a:focus { color: #FD730D; text-decoration: underline; outline: none;}
 
 #M_registration td[data-title*="報　　名"] a, #M_registration td[data-title*="推薦新人"] a, #M_registration td[data-title*="首次上課學員"] a, #M_registration td[data-title*="3年以下學員"] a, #M_registration td[data-title*="3年以上學員"] a, #M_registration td[data-title*="助教"] a, #M_registration td[data-title*="第2次上課學員"] a, #M_registration td[data-title*="不限"] a { color:#fff; text-decoration:none;}
 
@@ -7461,7 +7461,7 @@ fieldset[disabled] .btn-warning.focus {
 #M_registration_cart tr:hover{ background:#fffff1;}
 #M_registration_cart table tr:last-child td { border-bottom:1px solid #ccc;}
 #M_registration_cart td a { color:#006699;}
-#M_registration_cart td a:hover, #M_registration_cart td a:focus { color: #62880f; text-decoration: underline; outline: none;}
+#M_registration_cart td a:hover, #M_registration_cart td a:focus { color: #FD730D; text-decoration: underline; outline: none;}
 
 #M_registration_cart td[data-title*="報　　名"] a, #M_registration_cart td[data-title*="推薦新人"] a, #M_registration_cart td[data-title*="首次上課學員"] a, #M_registration_cart td[data-title*="3年以下學員"] a, #M_registration_cart td[data-title*="3年以上學員"] a, #M_registration_cart td[data-title*="助教"] a, #M_registration_cart td[data-title*="第2次上課學員"] a, #M_registration_cart td[data-title*="不限"] a { color:#fff; text-decoration:none;}
 
@@ -7539,7 +7539,7 @@ fieldset[disabled] .btn-warning.focus {
 #M_registration_order tr:hover{ background:#fffff1;}
 #M_registration_order table tr:last-child td { border-bottom:1px solid #ccc;}
 #M_registration_order td a { color:#006699;}
-#M_registration_order td a:hover, #M_registration_order td a:focus { color: #62880f; text-decoration: underline; outline: none;}
+#M_registration_order td a:hover, #M_registration_order td a:focus { color: #FD730D; text-decoration: underline; outline: none;}
 
 #M_registration_order td[data-title*="報　　名"] a, #M_registration_order td[data-title*="推薦新人"] a, #M_registration_order td[data-title*="首次上課學員"] a, #M_registration_order td[data-title*="3年以下學員"] a, #M_registration_order td[data-title*="3年以上學員"] a, #M_registration_order td[data-title*="助教"] a, #M_registration_order td[data-title*="第2次上課學員"] a, #M_registration_order td[data-title*="不限"] a { color:#fff; text-decoration:none;}
 
@@ -7737,7 +7737,7 @@ fieldset[disabled] .btn-warning.focus {
 #M_learn_table tr:hover{ background:#fffff1;}
 #M_learn_table table tr:last-child td { border-bottom:1px solid #ccc;}
 #M_learn_table td a { color:#006699;}
-#M_learn_table td a:hover, #M_learn_table td a:focus { color: #62880f; text-decoration: underline; outline: none;}
+#M_learn_table td a:hover, #M_learn_table td a:focus { color: #FD730D; text-decoration: underline; outline: none;}
 
 @media (max-width:604px) {
 	#M_learn_table { border-top: 0px solid #ccc;}
@@ -7970,7 +7970,7 @@ fieldset[disabled] .btn-warning.focus {
 
 /*標題*/
 .iTitle {
-  color: #990000;
+  color: #D95400;
   font-size: 1.7em;
   font-family: "思源黑體", "Noto Sans T Chinese", "微軟正黑體";
   font-weight: 100;
@@ -7997,6 +7997,13 @@ fieldset[disabled] .btn-warning.focus {
 
 /*填寫欄位-會員登入&付款通知&購物車*/
 #M_member .form-control, .payment-wrap .form-control, #M_cart .form-control {
+  font-size: 1rem;
+  background: #fff;
+  box-shadow: none;
+  border-radius: 0;
+  border: 1px solid #e3e3e3;
+}
+.payment-wrap .form-control, #M_cart .form-control {
   padding: 0;
   font-size: inherit;
   background: transparent;
@@ -8146,7 +8153,7 @@ fieldset[disabled] .btn-warning.focus {
   opacity: 0.7;
 }
 .M_mem_i .box:hover i {
-	color: #62880f;
+	color: #FD730D;
   opacity: 1;
 }
 /*
@@ -9682,7 +9689,7 @@ fieldset[disabled] .btn-warning.focus {
 #M_performance_table table tr:first-child td { border-top:1px solid #ccc; border-bottom:1px dotted #ccc;}
 #M_performance_table table tr:last-child td { border-bottom:1px solid #ccc;}
 #M_performance_table td a { color:#006699;}
-#M_performance_table td a:hover, #M_learn_table td a:focus { color: #62880f; text-decoration: underline; outline: none;}
+#M_performance_table td a:hover, #M_learn_table td a:focus { color: #FD730D; text-decoration: underline; outline: none;}
 
 @media (max-width:604px) {
 	#M_performance_table { border-top: 0px solid #ccc;}
@@ -9726,7 +9733,7 @@ fieldset[disabled] .btn-warning.focus {
 #M_performance_table2 table tr:first-child td { border-top:1px solid #ccc;}
 #M_performance_table2 table tr:last-child td { border-bottom:1px solid #ccc;}
 #M_performance_table2 td a { color:#006699;}
-#M_performance_table2 td a:hover, #M_learn_table2 td a:focus { color: #62880f; text-decoration: underline; outline: none;}
+#M_performance_table2 td a:hover, #M_learn_table2 td a:focus { color: #FD730D; text-decoration: underline; outline: none;}
 
 #M_performance_table2 .row {
 	padding-left: 40px;
@@ -9773,7 +9780,7 @@ fieldset[disabled] .btn-warning.focus {
 #M_performance_table3 table tr:first-child td { border-top:1px solid #ccc;}
 #M_performance_table3 table tr:last-child td { border-bottom:1px solid #ccc;}
 #M_performance_table3 td a { color:#006699;}
-#M_performance_table3 td a:hover, #M_learn_table td a:focus { color: #62880f; text-decoration: underline; outline: none;}
+#M_performance_table3 td a:hover, #M_learn_table td a:focus { color: #FD730D; text-decoration: underline; outline: none;}
 
 #M_performance_table3 .linkLine i { font-size: 25px;}
 /*組織圖*/
@@ -9791,7 +9798,7 @@ fieldset[disabled] .btn-warning.focus {
 #M_performance_table4 table tr:first-child td { border-top:1px solid #ccc;}
 #M_performance_table4 table tr:last-child td { border-bottom:1px solid #ccc;}
 #M_performance_table4 td a { color:#006699;}
-#M_performance_table4 td a:hover, #M_learn_table td a:focus { color: #62880f; text-decoration: underline; outline: none;}
+#M_performance_table4 td a:hover, #M_learn_table td a:focus { color: #FD730D; text-decoration: underline; outline: none;}
 
 @media (max-width:604px) {
 	#M_performance_table4 { border-top: 0px solid #ccc;}
@@ -10958,7 +10965,7 @@ fieldset[disabled] .btn-warning.focus {
     position: relative;
     font-size: 1rem;
     line-height: 20px;
-	color: #990000;
+	color: #D95400;
     padding-left: 30px;
     margin-bottom: 10px;
 }
@@ -11014,7 +11021,7 @@ fieldset[disabled] .btn-warning.focus {
 }
 
 #M_philosophy .M_philosophy_wrap span {
-color: #990000;
+color: #D95400;
 }
 
 
@@ -11036,7 +11043,7 @@ color: #990000;
 	margin-left: 25px;
 }
 #M_philosophy .M_philosophy_wrap div ul li {
-	color: #990000;
+	color: #D95400;
 }
 
 #M_philosophy .M_philosophy_wrap div p.img_width {
@@ -11253,7 +11260,7 @@ color: #990000;
 #M_free div p {
 	display: block;
 	font-size: 18px;
-	color: #990000;
+	color: #D95400;
 	margin-bottom: 15px;
 }
 @media (max-width: 424px) {
@@ -11333,7 +11340,7 @@ color: #990000;
 
 #M_system div .title {
 	font-size: 20px;
-	color: #990000;
+	color: #D95400;
 }
 @media (max-width: 424px) {
 	#M_system div .title {
@@ -11386,7 +11393,7 @@ color: #990000;
 }
 #M_brand .M_brand_wrap_01 .title {
 	display: block;
-	color: #990000;
+	color: #D95400;
 	padding-bottom: 10px;
 }
 
@@ -11407,7 +11414,7 @@ color: #990000;
 
 #M_brand .M_brand_wrap_02 .title {
 	display: block;
-	color: #990000;
+	color: #D95400;
 	font-size: 18px;
 	padding-bottom: 8px;
 }
@@ -11429,7 +11436,7 @@ color: #990000;
 }
 #M_brand .M_brand_wrap_03 .title {
 	display: block;
-	color: #990000;
+	color: #D95400;
 	font-size: 18px;
 	padding-bottom: 8px;
 }
@@ -11567,7 +11574,7 @@ color: #990000;
 
 #M_brand .M_brand_wrap_05 .content .title {
 	font-size: 20px;
-	color: #990000;
+	color: #D95400;
 	padding-bottom: 30px;
 }
 @media (max-width: 480px) {
@@ -11741,7 +11748,7 @@ color: #990000;
 	}
 	#M_location td span {
 		display: block;
-		color: #62880f;
+		color: #FD730D;
 		font-size: 15px;
 		font-weight: bold;
 		padding-bottom: 5px;
@@ -12002,7 +12009,7 @@ color: #990000;
 	#M_course .history-item .history-list p {
 		display: block;
 		font-size: 18px;
-		color: #62880f;
+		color: #FD730D;
 		padding-bottom: 10px;
 	}
 }
@@ -12025,13 +12032,13 @@ color: #990000;
 }
 @media (max-width: 400px) {
 	#M_course .history-item .history-list:before {
-		border: 3px solid #62880f;
+		border: 3px solid #FD730D;
 	}
 }
 
 #M_course .history-item .history-list span {
 	display: block;
-	color: #990000;
+	color: #D95400;
     font-size: 1rem;
 	line-height: 25px;
 }
@@ -12145,8 +12152,8 @@ color: #990000;
 .M_game_bar_img { display: block; width: 100%; height: 70px; margin: 0 auto;}
 .M_game_result_img { display: block; width: 100%; height: 350px; margin: 0 auto;}
 
-.M_game_bar_msg { display: block; width: 100%; height: 50px; color: #990000; font-size: 25px; padding-top: 160px; margin: 0 auto;}
-.M_game_result_msg { display: block; width: 100%; color: #990000; font-size: 15px; margin: 10px auto;}
+.M_game_bar_msg { display: block; width: 100%; height: 50px; color: #D95400; font-size: 25px; padding-top: 160px; margin: 0 auto;}
+.M_game_result_msg { display: block; width: 100%; color: #D95400; font-size: 15px; margin: 10px auto;}
 
 .M_game_bar_bt { display: block; width: 100%; height: 160px; padding-top: 60px; margin: 0 auto;}
 .btn-game:link { display: block; width: 170px; background: url(../images/game/button.png) 0 0 no-repeat; height: 160px; margin: 0 auto;}
