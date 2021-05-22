@@ -2700,17 +2700,17 @@ body.fullscreen-slider .navbar {
 }
 
 .nav-item {
-	margin-right: 46px;
+	/* margin-right: 46px; */
 }
 
 .nav-item:last-child {
-	margin-right: 0;
+	/* margin-right: 0; */
 }
 
 .nav-item .nav-link {
-	font-size: 18px;
+	/* font-size: 18px; */
 	color: #666666;
-	font-weight: 600;
+	/* font-weight: 600; */
 	border: none;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
@@ -4328,7 +4328,7 @@ body.fullscreen-slider .navbar {
 		float: none;
 	}
 	.nav-item {
-		margin-right: 20px;
+		/* margin-right: 20px; */
 	}
 	.blog__details__item__title {
 		margin-right: 30px;
