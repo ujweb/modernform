@@ -151,6 +151,102 @@ nav.navbar-dark .navbar-toggler {
     }
 }
 
+section {
+    position: relative;
+}
+section > .bg-decoration {
+    position: absolute;
+    transform: translateY(-50px);
+    transition: all 1s cubic-bezier(0.35, 0.7, 1, 1);
+}
+section > .bg-decoration-op {
+    bottom: 0;
+    right: 0;
+}
+section > .bg-decoration-1-1 {
+    bottom: 0;
+    left: 55px;
+}
+section > .bg-decoration-2-1 {
+    top: 0;
+    left: 0;
+}
+section > .bg-decoration-3-1 {
+    top: 80px;
+    right: 10px;
+}
+section > .bg-decoration-6-1 {
+    top: 30px;
+    right: 0;
+    width: 114px;
+    height: 206px;
+    overflow: hidden;
+}
+section > .bg-decoration-6-1 > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 206px;
+    max-width: none;
+}
+section > .bg-decoration-6-2 {
+    top: 0;
+    left: -20px;
+    z-index: 1;
+}
+section > .bg-decoration-6-3 {
+    bottom: -50px;
+    left: -15px;
+    z-index: 1;
+}
+section > .bg-decoration-6-4 {
+    bottom: 0;
+    right: 0;
+    width: 255px;
+    height: 90px;
+    overflow: hidden;
+}
+section > .bg-decoration-6-4 > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    max-width: none;
+}
+@media screen and (max-width: 767px) {
+    section > .bg-decoration-op {
+        width: 50%;
+    }
+    section > .bg-decoration-1-1,
+    section > .bg-decoration-2-1 {
+        width: 50%;
+    }
+    section > .bg-decoration-2-1 {
+        left: -3%;
+    }
+    section > .bg-decoration-3-1 {
+        top: auto;
+        left: auto;
+        right: 0;
+        bottom: -8%;
+    }
+    section > .bg-decoration-6-1 {
+        top: 66.666667vw;
+    }
+    section > .bg-decoration-6-4 {
+        bottom: -3rem;
+        left: 0;
+        right: auto;
+    }
+    section > .bg-decoration-6-2,
+    section > .bg-decoration-6-3 {
+        display: none;
+    }
+}
+section.active .bg-decoration {
+    transform: translateY(0px);
+}
+
 section .opening_img, section .opening_text {
     width: 100%;
 }
@@ -297,9 +393,11 @@ section.section-6 .col-text {
         padding-bottom: 80px;
         background-color: #ff883e;
     }
-    section.section-6 img {
+    section.section-6 .col-img img {
+        position: relative;
         max-width: none;
         width: 55.555556vw;
+        z-index: 2;
     }
     section.section-6 .col-text {
         padding-top: 80px;
