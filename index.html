@@ -135,7 +135,7 @@
 							<h2 class="fs56 text-primary">維持最好的自己</h2>
 							<div class="slogan fs20 text-brown font-weight-300 pt-4 mt-3">
 								<span class="d-inline-block mr-4">預防醫學</span><span class="d-inline-block mr-4">從最簡單開始</span>
-								<a href="#!" class="d-inline-block">
+								<a href="q1.html" class="d-inline-block">
 									<img src="Portal_MADENFORM/ashion/img/index/btn-cicle.svg" width="48" alt="">
 								</a>
 							</div>
@@ -154,7 +154,7 @@
 					<div class="fs65 text-center line-height-125 mb-3">「Trust me, you can make it!」</div>
 					<div class="fs20 line-height-2 text-center">
 						相信的力量，始於內在的堅毅<br/>
-						給自己機會，重現健康、自信、風采的曲線
+						<span class="d-inline-block">給自己機會，</span><span class="d-inline-block">重現健康、自信、風采的曲線</span>
 					</div>
 				</div>
 			</section>
@@ -169,7 +169,7 @@
 						</div>
 						<div class="col-lg-6 col-text pl-lg-5 text-lg-left text-center">
 							<div class="fs48 text-lg-white text-primary mt-0 my-3 pb-lg-5 wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">
-								量身打造<span class="fs30 d-inline-block align-middle">╳</span>專家調配<span class="fs30 d-inline-block align-middle">╳</span>漢方營養
+								<span class="d-inline-block">量身打造</span><span class="fs30 d-sm-inline-block d-block align-middle">╳</span><span class="d-inline-block">專家調配</span><span class="fs30 d-sm-inline-block d-block align-middle">╳</span><span class="d-inline-block">漢方營養</span>
 							</div>
 							<div class="d-table mx-auto mx-lg-0 text-left fs20 text-brown line-height-2 font-weight-300 pb-3 wow animate__animated animate__fadeInDown" data-wow-delay="0.6s">
 								- 專業營養師諮詢<br/>
@@ -236,7 +236,7 @@
 								<div class="col-lg-3 col-6 mt-lg-0 mt-5 fs20 text-center wow animate__animated animate__fadeInUp" data-wow-delay="0s">
 									<img class="d-block mx-auto" src="Portal_MADENFORM/ashion/img/index/mask-group-11.svg" width="84" alt="">
 									<div class="text-primary mt-lg-5 mt-2">全省門市服務</div>
-									<div class="text-brown mt-2">線上線下實體感受</div>
+									<div class="text-brown mt-2"><span class="d-inline-block">線上線下</span><span class="d-inline-block">實體感受</span></div>
 								</div>
 							</div>
 						</div>
@@ -326,6 +326,7 @@
 			</div>
 		</footer>
 		<!-- Footer Section End -->
+		<div id="gotop"><img src="Portal_MADENFORM/ashion/img/index/btn-top.svg" width="48" alt="返回至頁首"></div>
 		<!-- Search Begin -->
 		<div class="search-model">
 			<div class="h-100 d-flex align-items-center justify-content-center">
@@ -349,31 +350,6 @@
 		<script src="Portal_MADENFORM/ashion/js/plugins/slick/slick.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 		<script src="Portal_MADENFORM/ashion/js/main.js"></script>
-		<script>
-			var isInViewport = function(elem) {
-				var distance = elem.getBoundingClientRect();
-				return (
-					distance.top >= 0 &&
-					distance.left >= 0 &&
-					distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-					distance.right <= (window.innerWidth || document.documentElement.clientWidth)
-				);
-			};
-			// read the link on how above code works
-			var findMe = document.querySelectorAll('.detect-section');
-			window.addEventListener('scroll', function(event) {
-				// add event on scroll
-				findMe.forEach(element => {
-					//for each .detect-section
-					if (isInViewport(element)) {
-						//if in Viewport
-						element.classList.add("active");
-					} else {
-						element.classList.remove("active");
-					}
-				});
-			}, false);
-			new WOW().init();
-		</script>
+		<script src="Portal_MADENFORM/ashion/js/customize.js"></script>
 	</body>
 </html>

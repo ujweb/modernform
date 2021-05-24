@@ -31,16 +31,16 @@ body {
     }
 }
 .fs65 {
-    font-size: 52px;
+    font-size: 48px;
 }
 .fs56 {
-    font-size: 42px;
+    font-size: 38px;
 }
 .fs48 {
-    font-size: 32px;
+    font-size: 30px;
 }
 .fs30 {
-    font-size: 28px;
+    font-size: 26px;
 }
 .fs20 {
     font-size: 18px;
@@ -150,7 +150,14 @@ nav.navbar-dark .navbar-toggler {
         color: #fff;
     }
 }
-
+#gotop {
+    position: fixed;
+    display: none;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
 section {
     position: relative;
 }
@@ -405,7 +412,12 @@ section.section-6 .col-text {
     }
 }
 section.section-6 .col-text .label {
-    letter-spacing: 0.33333333em;
+    letter-spacing: 0.2em;
+}
+@media screen and (min-width: 1024px) {
+    section.section-6 .col-text .label {
+        letter-spacing: 0.33333333em;
+    }
 }
 section .decorate {
     position: relative;
